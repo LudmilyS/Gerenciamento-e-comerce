@@ -1,14 +1,12 @@
 export abstract class Cadastro {
     private _numero: number
-    private _sabor: string
     private _tipo: number
     private _validade: string
     private _preco: number
     private _produto: string
 
-    constructor (numero: number, sabor: string, tipo: number, validade: string, preco: number, produto: string) {
+    constructor (numero: number, tipo: number, validade: string, preco: number, produto: string) {
         this._numero = numero
-        this._sabor = sabor
         this._tipo = tipo
         this._validade = validade
         this._preco = preco
@@ -21,14 +19,6 @@ export abstract class Cadastro {
 
     public set numero(numero: number) {
         this._numero = numero
-    }
-
-    public get sabor() {
-        return this._sabor
-    }
-
-    public set sabor(sabor: string) {
-        this._sabor = sabor
     }
 
     public get tipo() {
@@ -83,7 +73,6 @@ export abstract class Cadastro {
         console.log("*****************************************************")
         console.log("Código do Produto: ", this._numero)
         console.log("Nome do produto: ", this._produto);
-        console.log("Sabor: " , this._sabor);
         console.log("Preço: " + this._preco);
     
     }

@@ -3,8 +3,8 @@ import { Cadastro } from "./Cadastro";
 export class Vitaminas extends Cadastro {
     private _capsulas: number
     
-    constructor (numero: number, sabor: string, tipo: number, validade: string, preco: number, produto: string, capsulas: number) {
-        super(numero, sabor, tipo, validade, preco, produto)
+    constructor (numero: number, tipo: number, validade: string, preco: number, produto: string, capsulas: number) {
+        super(numero, tipo, validade, preco, produto)
         this._capsulas = capsulas
     }
 
